@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <h1>GllacyShop</h1>
+    <nav class="page-header__page-header_main-nav">
+      <ul>
+        <li><a href="#">Католог</a></li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О компании</a></li>
+      </ul>
+    </nav>
+    <nav class="page-header__page-header_user-nav">
+      <ul>
+        <li><a href="">Поиск</a></li>
+        <li><a href="">Вход</a></li>
+        <li><a href="">Корзина</a></li>
+      </ul>
+    </nav>
+    <p>С 10 до 20, ежедневно <span>8 812 450-25-25</span></p>
+  </header>
+  <main>
+    <ul class="breadcrumbs">
+      <li><a href="">Главная</a></li>
+      <li><a href="">Каталог</a></li>
+      <li><a href="">Сливочное</a></li>
+    </ul>
+    <section class="filters">
+      <h2 class="visualy-hidden">Фильтры</h2>
+      <form>
+        <fieldset name="sorting">
+          <legend>Сортировка:</legend>
+          <select name="sorting_method">
+            <option value="popular">по популярности</option>
+            <option value="low_price">сначала недорогие</option>
+            <option value="high_price">сначала дорогие</option>
+            <option value="fat_content">по жирности</option>
+          </select>
+        </fieldset>
+        <fieldset name="price">
+          <legend>Цена:</legend>
+          <input type="range">
+        </fieldset>
+        <fieldset name="fat_content">
+          <legend>Жирность</legend>
+          <input type="radio" name="fat_content__radio" id="0" value="0">
+          <label for="0">0%</label>
+          <input type="radio" name="fat_content__radio" id="<10" value="<10">
+          <label for="<10">&lt;10%</label>
+          <input type="radio" name="fat_content__radio" id="<30" value="<30">
+          <label for="<30">&lt;30%</label>
+          <input type="radio" name="fat_content__radio" id=">30" value=">30">
+          <label for=">30">&gt;30%</label>
+        </fieldset>
+        <fieldset name="filling">
+          <legend>Наполнители: </legend>
+          <input type="checkbox" name="filling__checkbox" value="chocolate" id="chocolate">
+          <label for="chocolate">шоколадные</label>
+          <input type="checkbox" name="filling__checkbox" value="sprinkling" id="sprinkling">
+          <label for="sprinkling">сахарные присыпки</label>
+          <input type="checkbox" name="filling__checkbox" value="fruits" id="fruits">
+          <label for="fruits">фрукты</label>
+          <input type="checkbox" name="filling__checkbox" value="syrop" id="syrop">
+          <label for="syrop">сиропы</label>
+          <input type="checkbox" name="filling__checkbox" value="jam" id="jam">
+          <label for="jam">джемы</label>
+        </fieldset>
+        <button type="submit">Применить</button>
+      </form>
+    </section>
+    <section class="products">
+      <h2>Каталог товаров</h2>
+      <ul>
+        <li><span>310 Р/кг</span><a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></li>
+        <li><span>380 Р/кг</span><a href="">Сливочно-кофейное с кусочками шоколада</a></li>
+        <li><span>355 Р/кг</span><a href="">Сливочно-клубничное с присыпкой из белого шоколада</a></li>
+        <li><span>415 Р/кг</span><a href="">Сливочное крем-брюле с карамельной подливкой</a></li>
+        <li><span>325 Р/кг</span><a href="">Сливочное с брусничным джемом</a></li>
+        <li><span>410 Р/кг</span><a href="">Сливочно-черничное с цельными ягодами черники </a></li>
+        <li><span>375 Р/кг</span><a href="">Сливочно-лимонное с карамельной присыпкой</a></li>
+        <li><span>320 Р/кг</span><a href="">Сливочное с шоколадной стружкой</a></li>
+        <li><span>440 Р/кг</span><a href="">Сливочно-ванильное с кусочками шоколада</a></li>
+        <li><span>435 Р/кг</span><a href="">Сливочноe с ментоловым сиропом</a></li>
+        <li><span>355 Р/кг</span><a href="">Сливочное с кусочками черного шоколада</a></li>
+        <li><span>420 Р/кг</span><a href="">Сливочное с мятным сиропом</a></li>
+      </ul>
+      <ul class="products__navigation">
+        <li><a href="">Вперёд</a></li>
+        <li><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li><a href="">5</a></li>
+        <li><a href="">Назад</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <section class="page-footer__page-footer_social">
+      <h2>Мы в социльных сетях</h2>
+      <ul>
+        <li><a href="https://twitter.com/">Twitter</a></li>
+        <li><a href="https://instagram.com/">Instagram</a></li>
+        <li><a href="https://facebook.com/">Facebook</a></li>
+        <li><a href="https://vk.com/"></a>VKontakte</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Дополнительная информация</h2>
+      <ul>
+        <li><a href="">Для поставщиков</a></li>
+        <li><a href="">Наши документы</a></li>
+        <li><a href="">О производстве</a></li>
+        <li><a href="">Экологические стандарты</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Благодарности</h2>
+      <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2020</p>
+    </section>
+  </footer>
+</body>
+
+</html>
