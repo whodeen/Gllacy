@@ -1,0 +1,15 @@
+{
+  "name": "gllacy",
+  "version": "0.2.1",
+  "description": "Learning js",
+  "main": "script.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Alexander Fedoniuk",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-google": "^0.14.0",
+    "lite-server": "^2.5.4"
+  }
+}
