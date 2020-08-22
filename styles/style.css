@@ -1,10 +1,14 @@
+body {
+    background: #849d8f;
+}
+
 .button-primary {
     background-image: linear-gradient(to bottom, rgb(242, 104, 67), rgb(231, 75, 54));
     border: none;
     border-radius: 29px;
-    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, .64);
     color: white;
-    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, .76);
 }
 
 .button-primary:focus,
@@ -19,10 +23,10 @@
 }
 
 .button-big {
-    font-size: 32px;
-    line-height: 44px;
     height: 63px;
     width: 268px;
+    font-size: 32px;
+    line-height: 44px;
 }
 
 .button-regular {
@@ -31,6 +35,116 @@
     font-size: 18px;
     line-height: 24px;
 }
+
+.page-header__gllacy-logo {
+    height: 64px;
+    width: 154px;
+    font-size: 0;
+    background-image: url(../img/Logo.png);
+}
+
+.page-header__user-nav a,
+.page-header__page-nav a,
+.page-header__user-nav a:focus,
+.page-header__page-nav a:focus,
+.page-header__user-nav a:visited,
+.page-header__page-nav a:visited {
+    text-decoration: inherit;
+}
+
+.page-header__user-nav li,
+.page-header__page-nav li {
+    list-style: none;
+}
+
+.page-header__page-nav__button {
+    display: inline-block;
+}
+
+.page-header__page-nav__button:hover {
+    background-color: rgb(248, 247, 244);
+    border: none;
+    border-radius: 15px;
+}
+
+.page-header__page-nav__button > a {
+    display: inline-block;
+    padding: 7px 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.page-header__page-nav__button:hover > a {
+    border-bottom: 1px solid transparent;
+    color: rgb(51, 51, 51);
+}
+
+.page-header__page-nav__catalog-dropdown {
+    position: absolute;
+    padding-top: 5px;
+}
+
+.page-header__page-nav__button--catalog:hover .page-header__page-nav__catalog-dropdown__content{
+    visibility: visible;
+}
+
+.page-header__page-nav__button--catalog {
+    position: relative;
+}
+
+.page-header__page-nav__catalog-dropdown__content {
+    visibility: hidden;
+    padding: 0;
+    width: 143px;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 5px;
+    background-color: rgb(248, 247, 244);
+}
+
+.page-header__page-nav__catalog-dropdown__content__button {
+    padding: 0 6px 0 6px;
+    color: rgb(51, 51, 51);
+}
+
+.page-header__page-nav__catalog-dropdown__content__button > a {
+    display: block;
+    padding: 9px 0 9px 15px;
+    color: inherit;
+}
+
+.page-header__page-nav__catalog-dropdown__content__button:first-child {
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+
+.page-header__page-nav__catalog-dropdown__content__button:first-child > a {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.page-header__page-nav__catalog-dropdown__content__button:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.page-header__page-nav__catalog-dropdown__content__button:hover {
+    background-color: rgb(251, 222, 215);
+}
+
+.page-header__user-nav__button {
+    height: 32px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid black;
+    padding: 8px 16px 8px 45px ;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+
 
 
 
