@@ -149,7 +149,17 @@
         <p>Адрес главного офиса и офлайн-магазина: <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
         <p>Для заказов по телефону: <span>8 812 450-25-25</span> (с 10 до 20 ежедневно)</p>
         <button class="button-primary button-regular">Форма обратной связи</button>
-        
+        <form class="feedback_form">
+          <span>Мы обязательно вам ответим!</span>
+          <label class="visualy_hidden" for="feedback_name">Имя</label>
+          <input id="feedback_name" type="text" placeholder="Как вас зовут?">
+          <label class="visualy_hidden" for="feedback_email">Електронная почта</label>
+          <input id="feedback_email" type="email" placeholder="Ваша почта для ответа">
+          <label class="visualy_hidden" id="feedback_text">Поле сообщения</label>
+          <textarea id="feedback_text" placeholder="Напишите что-нибуть..."></textarea>
+          <button class="button-primary button-regular" type="submit">Отправить</button>
+          <button type="button">Закрыть</button>
+        </form>
       </section>
     </section>
   </main>
