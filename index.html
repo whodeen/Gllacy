@@ -12,39 +12,100 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <a href="index.html">
-      <h1 class="page-header__gllacy-logo">GllacyShop</h1>
-    </a>
-    <nav>
-      <ul class="page-header__page-nav">
-        <li class="page-header__page-nav__button page-header__page-nav__button--catalog"><a href="#">Католог</a>
-          <div class="page-header__page-nav__catalog-dropdown">
-            <ul class="page-header__page-nav__catalog-dropdown__content">
-              <li class="page-header__page-nav__catalog-dropdown__content__button"><a href="#">Новинки</a></li>
-              <li class="page-header__page-nav__catalog-dropdown__content__button"><a href="#">Сливочное</a></li>
-              <li class="page-header__page-nav__catalog-dropdown__content__button"><a href="#">Щербеты</a></li>
-              <li class="page-header__page-nav__catalog-dropdown__content__button"><a href="#">Фруктовый лед</a></li>
-              <li class="page-header__page-nav__catalog-dropdown__content__button"><a href="#">Мелорин</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="page-header__page-nav__button"><a href="#">Доставка и оплата</a></li>
-        <li class="page-header__page-nav__button"><a href="#">О компании</a></li>
-      </ul>
-    </nav>
-    <nav class="page-header__user-nav">
-      <ul>
-        <li><a href="" class="page-header__user-nav__button">Поиск</a></li>
-        <li><a href="" class="page-header__user-nav__button">Вход</a></li>
-        <li><a href="" class="page-header__user-nav__button">Корзина</a></li>
-      </ul>
-    </nav>
-    <p>С 10 до 20, ежедневно <span>8 812 450-25-25</span></p>
+  <header class="page-container">
+    <div class="page-header">
+      <a href="index.html">
+        <h1 class="page-header__gllacy-logo">GllacyShop</h1>
+      </a>
+      <nav>
+        <ul class="page-header__page-nav">
+          <li class="page-header__page-nav__button page-header__page-nav__button--catalog "><a href="#">Католог</a>
+            <div class="page-header__page-nav__catalog-dropdown">
+              <ul class="page-header__page-nav__catalog-dropdown__content">
+                <li class="page-header__page-nav__catalog-dropdown__content__button"><a href="#">Новинки</a></li>
+                <li class="page-header__page-nav__catalog-dropdown__content__button "><a href="#">Сливочное</a></li>
+                <li class="page-header__page-nav__catalog-dropdown__content__button"><a href="#">Щербеты</a></li>
+                <li class="page-header__page-nav__catalog-dropdown__content__button"><a href="#">Фруктовый лед</a></li>
+                <li class="page-header__page-nav__catalog-dropdown__content__button"><a href="#">Мелорин</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="page-header__page-nav__button"><a href="#">Доставка и оплата</a></li>
+          <li class="page-header__page-nav__button"><a href="#">О компании</a></li>
+        </ul>
+      </nav>
+      <nav class="page-header__user-nav__container">
+        <ul class="page-header__user-nav">
+          <li class="page-header__user-nav__search">
+            <button class="page-header__user-nav__button page-header__user-nav__button--search">Поиск</button>
+            <div class="page-header__user-nav__search__container">
+              <form class="page-header__user-nav__search__form">
+                <input class="text-input--primary page-header__user-nav__search__form__input" type="text"
+                  placeholder="Что ищем?">
+              </form>
+            </div>
+          </li>
+          <li class="page-header__user-nav__login">
+            <button class="page-header__user-nav__button page-header__user-nav__button--login">Вход</button>
+            <div class="page-header__user-nav__login__container">
+              <form class="page-header__user-nav__login__form">
+                <input class="text-input--primary" type="email" placeholder="Электронная почта">
+                <input class="text-input--primary" type="password" placeholder="Пароль">
+                <div class="page-header__user-nav__login__form__container">
+                  <button class="button--primary page-header__user-nav__button--big"
+                    type="submit">Войти</button>
+                  <div class="page-header__user-nav__login__form__link-container">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="page-header__user-nav__chart">
+            <button class="page-header__user-nav__button page-header__user-nav__button--chart">Корзина</button>
+            <div class="page-header__user-nav__chart__container">
+              <form class="page-header__user-nav__chart__form">
+                <h3 class="visually-hidden">Корзина</h3>
+                <table class="page-header__user-nav__chart__form__item-list">
+                  <tr>
+                    <td>
+                      <button class="page-header__user-nav__chart__form__item-list__button" type="button">
+                        <span class="page-header__user-nav__chart__form__item-list__button__icon">✕</span>Delete
+                      </button>
+                    </td>
+                    <td><img src="/img/Мороженко 1.png" alt="mock"></td>
+                    <td width="230px" class="page-header__user-nav__chart__form__item-list__item-name">Пломбир с апельсиновым джемом</td>
+                    <td>1,5 кг x <span>200 руб.</span></td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td><button class="page-header__user-nav__chart__form__item-list__button" type="button">
+                        <span class="page-header__user-nav__chart__form__item-list__button__icon">✕</span>Delete</button>
+                    </td>
+                    <td><img src="/img/Мороженко 2.png" alt="mock"></td>
+                    <td class="page-header__user-nav__chart__form__item-list__item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td>1,5 кг x <span>300 руб.</span></td>
+                    <td>450 руб.</td>
+                  </tr>
+                </table>
+                <div class="page-header__user-nav__chart__form__submission">
+                  <span>Итого: 750руб.</span>
+                  <button class="button--primary page-header__user-nav__button--big page-header__user-nav__chart__form__submission__button" type="submit">Оформить заказ</button>
+                </div>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <p class="page-header__working-hours">С 10 до 20, ежедневно <span class="page-header__working-hours__phone-number">
+        8 812 450-25-25</span></p>
   </header>
+
   <main class="page_main">
     <section class="page_main__slider">
-      <h2 class="visualy-hidden">Лучшие предложения</h2>
+      <h2 class="visually-hidden">Лучшие предложения</h2>
       <section class="page_main__slider--first">
         <h3>Крем-брюле и пломбир с малиновым джемом</h3>
         <fieldset>
@@ -52,7 +113,7 @@
           <input type="radio" name="page_main__slider__radio slider_radio--first">
           <input type="radio" name="page_main__slider__radio slider_radio--first">
         </fieldset>
-        <button class="button-primary button-big">Давайте оба!</button>
+        <button class="button--primary button--big">Давайте оба!</button>
       </section>
       <section class="page_main__slider--second visualy-hidden">
         <h3>Шоколадный пломбир и лимонный сорбет</h3>
@@ -61,7 +122,7 @@
           <input type="radio" name="page_main__slider__radio slider_radio--second" checked>
           <input type="radio" name="page_main__slider__radio slider_radio--second">
         </fieldset>
-        <button class="button-primary button-big">Давайте оба!</button>
+        <button class="button--primary button--big">Давайте оба!</button>
       </section>
       <section class="page_main__slider--third visualy-hidden">
         <h3>Пломбир с помадкой и клубничный щербет</h3>
@@ -70,7 +131,7 @@
           <input type="radio" name="page_main__slider__radio slider_radio--third">
           <input type="radio" name="page_main__slider__radio slider_radio--third" checked>
         </fieldset>
-        <button class="button-primary button-big">Давайте оба!</button>
+        <button class="button--primary button--big">Давайте оба!</button>
       </section>
     </section>
     <section class="page_main__banners">
@@ -78,13 +139,13 @@
       <section class="page_main__banners__banner">
         <strong>Малинка даром!</strong>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <button class="button-primary button-regular" type="button">Хочу варенье!</button>
+        <button class="button--primary button--regular" type="button">Хочу варенье!</button>
       </section>
       <section class="page_main__banners__banner">
         <strong>Шоколадки даром!</strong>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
         </p>
-        <button class="button-primary button-regular" type="button">Хочу шоколадки!</button>
+        <button class="button--primary button--regular" type="button">Хочу шоколадки!</button>
       </section>
     </section>
     <section class="page_main__hits">
@@ -151,7 +212,7 @@
       <form>
         <label for="email">E-mail</label>
         <input type="email" id="email" name="email">
-        <button class="button-primary button-regular" type="submit">Отправить</button>
+        <button class="button--primary button--regular" type="submit">Отправить</button>
       </form>
     </section>
     <section class="page-main__map">
@@ -160,7 +221,7 @@
         <h3>Адрес</h3>
         <p>Адрес главного офиса и офлайн-магазина: <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
         <p>Для заказов по телефону: <span>8 812 450-25-25</span> (с 10 до 20 ежедневно)</p>
-        <button class="button-primary button-regular">Форма обратной связи</button>
+        <button class="button--primary button--regular">Форма обратной связи</button>
         <form class="feedback_form">
           <span>Мы обязательно вам ответим!</span>
           <label class="visualy_hidden" for="feedback_name">Имя</label>
@@ -169,7 +230,7 @@
           <input id="feedback_email" type="email" placeholder="Ваша почта для ответа">
           <label class="visualy_hidden" id="feedback_text">Поле сообщения</label>
           <textarea id="feedback_text" placeholder="Напишите что-нибуть..."></textarea>
-          <button class="button-primary button-regular" type="submit">Отправить</button>
+          <button class="button--primary button--regular" type="submit">Отправить</button>
           <button type="button">Закрыть</button>
         </form>
       </section>

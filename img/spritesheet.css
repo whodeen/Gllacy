@@ -1,0 +1,47 @@
+. {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.-__ {
+    width: 32px;
+    height: 32px;
+    background-position: -10px -10px;
+}
+
+.-__ {
+    width: 32px;
+    height: 32px;
+    background-position: -62px -10px;
+}
+
+.-___ {
+    width: 32px;
+    height: 32px;
+    background-position: -10px -62px;
+}
+
+.-____ {
+    width: 21px;
+    height: 19px;
+    background-position: -62px -62px;
+}
+
+.-____ {
+    width: 17px;
+    height: 17px;
+    background-position: -114px -10px;
+}
+
+.-______ {
+    width: 32px;
+    height: 32px;
+    background-position: -114px -47px;
+}
+
+.-_______2 {
+    width: 21px;
+    height: 20px;
+    background-position: -103px -99px;
+}
