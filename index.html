@@ -13,48 +13,52 @@
 
 <body>
   <header class="page-container">
-    <div class="page-header">
+    <div class="header">
       <a href="index.html">
-        <h1 class="page-header__gllacy-logo">GllacyShop</h1>
+        <h1 class="header__gllacy-logo">GllacyShop</h1>
       </a>
       <nav>
-        <ul class="page-header__page-nav">
-          <li class="page-header__page-nav__button page-header__page-nav__button--catalog "><a href="#">Католог</a>
-            <div class="page-header__page-nav__catalog-dropdown">
-              <ul class="page-header__page-nav__catalog-dropdown__content">
-                <li class="page-header__page-nav__catalog-dropdown__content__button"><a href="#">Новинки</a></li>
-                <li class="page-header__page-nav__catalog-dropdown__content__button "><a href="#">Сливочное</a></li>
-                <li class="page-header__page-nav__catalog-dropdown__content__button"><a href="#">Щербеты</a></li>
-                <li class="page-header__page-nav__catalog-dropdown__content__button"><a href="#">Фруктовый лед</a></li>
-                <li class="page-header__page-nav__catalog-dropdown__content__button"><a href="#">Мелорин</a></li>
+        <ul class="header__page-nav">
+          <li class="header__page-nav__button header__page-nav__button--catalog" tabindex="0"><a href="#">Католог</a>
+            <div class="header__page-nav__catalog-dropdown">
+              <ul class="header__page-nav__catalog-dropdown__content header__popup__shadow">
+                <li class="header__page-nav__catalog-dropdown__content__button" tabindex="0"><a href="#">Новинки</a>
+                </li>
+                <li class="header__page-nav__catalog-dropdown__content__button " tabindex="0"><a href="#">Сливочное</a>
+                </li>
+                <li class="header__page-nav__catalog-dropdown__content__button" tabindex="0"><a href="#">Щербеты</a>
+                </li>
+                <li class="header__page-nav__catalog-dropdown__content__button" tabindex="0"><a href="#">Фруктовый
+                    лед</a></li>
+                <li class="header__page-nav__catalog-dropdown__content__button" tabindex="0"><a href="#">Мелорин</a>
+                </li>
               </ul>
             </div>
           </li>
-          <li class="page-header__page-nav__button"><a href="#">Доставка и оплата</a></li>
-          <li class="page-header__page-nav__button"><a href="#">О компании</a></li>
+          <li class="header__page-nav__button"><a href="#">Доставка и оплата</a></li>
+          <li class="header__page-nav__button"><a href="#">О компании</a></li>
         </ul>
       </nav>
-      <nav class="page-header__user-nav__container">
-        <ul class="page-header__user-nav">
-          <li class="page-header__user-nav__search">
-            <button class="page-header__user-nav__button page-header__user-nav__button--search">Поиск</button>
-            <div class="page-header__user-nav__search__container">
-              <form class="page-header__user-nav__search__form">
-                <input class="text-input--primary page-header__user-nav__search__form__input" type="text"
+      <nav class="header__user-nav__container">
+        <ul class="header__user-nav">
+          <li class="header__user-nav__search" tabindex="0">
+            <button class="header__user-nav__button header__user-nav__button--search">Поиск</button>
+            <div class="header__user-nav__search__container">
+              <form class="header__user-nav__search__form header__popup__shadow">
+                <input class="text-input--primary header__user-nav__search__form__input" type="text"
                   placeholder="Что ищем?">
               </form>
             </div>
           </li>
-          <li class="page-header__user-nav__login">
-            <button class="page-header__user-nav__button page-header__user-nav__button--login">Вход</button>
-            <div class="page-header__user-nav__login__container">
-              <form class="page-header__user-nav__login__form">
+          <li class="header__user-nav__login" tabindex="0">
+            <button class="header__user-nav__button header__user-nav__button--login">Вход</button>
+            <div class="header__user-nav__login__container">
+              <form class="header__user-nav__login__form header__popup__shadow">
                 <input class="text-input--primary" type="email" placeholder="Электронная почта">
                 <input class="text-input--primary" type="password" placeholder="Пароль">
-                <div class="page-header__user-nav__login__form__container">
-                  <button class="button--primary page-header__user-nav__button--big"
-                    type="submit">Войти</button>
-                  <div class="page-header__user-nav__login__form__link-container">
+                <div class="header__user-nav__login__form__container">
+                  <button class="button--primary header__user-nav__button--big" type="submit">Войти</button>
+                  <div class="header__user-nav__login__form__link-container">
                     <a href="#">Забыли пароль?</a>
                     <a href="#">Новая регистрация</a>
                   </div>
@@ -62,36 +66,40 @@
               </form>
             </div>
           </li>
-          <li class="page-header__user-nav__chart">
-            <button class="page-header__user-nav__button page-header__user-nav__button--chart">Корзина</button>
-            <div class="page-header__user-nav__chart__container">
-              <form class="page-header__user-nav__chart__form">
+          <li class="header__user-nav__chart" tabindex="0">
+            <button class="header__user-nav__button header__user-nav__button--chart">Корзина</button>
+            <div class="header__user-nav__chart__container">
+              <form class="header__user-nav__chart__form header__popup__shadow">
                 <h3 class="visually-hidden">Корзина</h3>
-                <table class="page-header__user-nav__chart__form__item-list">
+                <table class="header__user-nav__chart__form__item-list">
                   <tr>
                     <td>
-                      <button class="page-header__user-nav__chart__form__item-list__button" type="button">
-                        <span class="page-header__user-nav__chart__form__item-list__button__icon">✕</span>Delete
+                      <button class="header__user-nav__chart__form__item-list__button" type="button">
+                        <span class="header__user-nav__chart__form__item-list__button__icon">✕</span>Delete
                       </button>
                     </td>
                     <td><img src="/img/Мороженко 1.png" alt="mock"></td>
-                    <td width="230px" class="page-header__user-nav__chart__form__item-list__item-name">Пломбир с апельсиновым джемом</td>
+                    <td width="230px" class="header__user-nav__chart__form__item-list__item-name">Пломбир с апельсиновым
+                      джемом</td>
                     <td>1,5 кг x <span>200 руб.</span></td>
                     <td>300 руб.</td>
                   </tr>
                   <tr>
-                    <td><button class="page-header__user-nav__chart__form__item-list__button" type="button">
-                        <span class="page-header__user-nav__chart__form__item-list__button__icon">✕</span>Delete</button>
+                    <td><button class="header__user-nav__chart__form__item-list__button" type="button">
+                        <span class="header__user-nav__chart__form__item-list__button__icon">✕</span>Delete</button>
                     </td>
                     <td><img src="/img/Мороженко 2.png" alt="mock"></td>
-                    <td class="page-header__user-nav__chart__form__item-list__item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="header__user-nav__chart__form__item-list__item-name">Клубничный пломбир с присыпкой из
+                      белого шоколада</td>
                     <td>1,5 кг x <span>300 руб.</span></td>
                     <td>450 руб.</td>
                   </tr>
                 </table>
-                <div class="page-header__user-nav__chart__form__submission">
+                <div class="header__user-nav__chart__form__submission">
                   <span>Итого: 750руб.</span>
-                  <button class="button--primary page-header__user-nav__button--big page-header__user-nav__chart__form__submission__button" type="submit">Оформить заказ</button>
+                  <button
+                    class="button--primary header__user-nav__button--big header__user-nav__chart__form__submission__button"
+                    type="submit">Оформить заказ</button>
                 </div>
               </form>
             </div>
@@ -99,40 +107,43 @@
         </ul>
       </nav>
     </div>
-    <p class="page-header__working-hours">С 10 до 20, ежедневно <span class="page-header__working-hours__phone-number">
+    <p class="header__working-hours">С 10 до 20, ежедневно <span class="header__working-hours__phone-number">
         8 812 450-25-25</span></p>
   </header>
 
-  <main class="page_main">
+  <main class="page_main page-container">
     <section class="page_main__slider">
       <h2 class="visually-hidden">Лучшие предложения</h2>
-      <section class="page_main__slider--first">
-        <h3>Крем-брюле и пломбир с малиновым джемом</h3>
-        <fieldset>
-          <input type="radio" name="page_main__slider__radio slider_radio--first" checked>
-          <input type="radio" name="page_main__slider__radio slider_radio--first">
-          <input type="radio" name="page_main__slider__radio slider_radio--first">
-        </fieldset>
+      <section class="page_main__slider--first ">
+        <h3 class="page_main__slider__heading">Крем-брюле и пломбир с малиновым джемом</h3>
+        <div class="page_main__slider__bottom">
+          <button class="button--primary button--big page_main__slider--first__button">Давайте оба!</button>
+        </div>
+      </section>
+      <section class="page_main__slider--second visually-hidden">
+        <h3 class="page_main__slider__heading">Шоколадный пломбир и лимонный сорбет</h3>
         <button class="button--primary button--big">Давайте оба!</button>
       </section>
-      <section class="page_main__slider--second visualy-hidden">
-        <h3>Шоколадный пломбир и лимонный сорбет</h3>
-        <fieldset>
-          <input type="radio" name="page_main__slider__radio slider_radio--second">
-          <input type="radio" name="page_main__slider__radio slider_radio--second" checked>
-          <input type="radio" name="page_main__slider__radio slider_radio--second">
-        </fieldset>
+      <section class="page_main__slider--third visually-hidden">
+        <h3 class="page_main__slider__heading">Пломбир с помадкой и клубничный щербет</h3>
         <button class="button--primary button--big">Давайте оба!</button>
       </section>
-      <section class="page_main__slider--third visualy-hidden">
-        <h3>Пломбир с помадкой и клубничный щербет</h3>
-        <fieldset>
-          <input type="radio" name="page_main__slider__radio slider_radio--third">
-          <input type="radio" name="page_main__slider__radio slider_radio--third">
-          <input type="radio" name="page_main__slider__radio slider_radio--third" checked>
-        </fieldset>
-        <button class="button--primary button--big">Давайте оба!</button>
-      </section>
+      <fieldset class="page_main__slider__radio__fieldset">
+        <div class="page_main__slider__radio__container">
+          <label class="page_main__slider__radio__button-container">
+            <input class="visually-hidden" type="radio" name="page_main__slider__radio slider_radio" checked>
+            <span class="page_main__slider__radio__button">Лучшее №1</span>
+          </label>
+          <label class="page_main__slider__radio__button-container">
+            <input class="visually-hidden" type="radio" name="page_main__slider__radio slider_radio">
+            <span class="page_main__slider__radio__button">Лучшее №2</span>
+          </label>
+          <label class="page_main__slider__radio__button-container">
+            <input class="visually-hidden" type="radio" name="page_main__slider__radio slider_radio">
+            <span class="page_main__slider__radio__button">Лучшее №3</span>
+          </label>
+        </div>
+      </fieldset>
     </section>
     <section class="page_main__banners">
       <h2 class="visualy_hidden">Специальные предложения</h2>

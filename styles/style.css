@@ -21,6 +21,8 @@ body {
 
 .page-container {
     padding: 0 27px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .button--primary {
@@ -30,6 +32,7 @@ body {
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, .64);
     color: white;
     text-shadow: 0px 2px 5px rgba(160, 32, 11, .76);
+    cursor: pointer;
 }
 
 .button--primary:focus,
@@ -94,7 +97,7 @@ body {
 *** HEADER SECTION (START)
 */
 
-.page-header {
+.header {
     display: flex;
     margin-top: 9px;
     border-top: 1px solid transparent;
@@ -102,7 +105,7 @@ body {
     
 }
 
-.page-header__gllacy-logo {
+.header__gllacy-logo {
     height: 64px;
     width: 154px;
     font-size: 0;
@@ -113,39 +116,42 @@ body {
 ***Page header PAGE NAVIGATION styles (START)
 */
 
-.page-header__page-nav {
+.header__page-nav {
     padding-left: 10px;
 }
 
-.page-header__user-nav a,
-.page-header__page-nav a,
-.page-header__user-nav a:focus,
-.page-header__page-nav a:focus,
-.page-header__user-nav a:visited,
-.page-header__page-nav a:visited {
+.header__user-nav a,
+.header__page-nav a,
+.header__user-nav a:focus,
+.header__page-nav a:focus,
+.header__user-nav a:visited,
+.header__page-nav a:visited {
     text-decoration: inherit;
 }
 
-.page-header__user-nav li,
-.page-header__page-nav li {
+.header__user-nav li,
+.header__page-nav li {
     list-style: none;
 }
 
+.header__popup__shadow {
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
 /*
 ***Page navigation NAVIGATION BUTTONS styles (START)
 */
 
-.page-header__page-nav__button {
+.header__page-nav__button {
     display: inline-block;
 }
 
-.page-header__page-nav__button:hover {
+.header__page-nav__button:hover {
     background-color: rgb(248, 247, 244);
     border: none;
     border-radius: 15px;
 }
 
-.page-header__page-nav__button > a {
+.header__page-nav__button > a {
     display: inline-block;
     padding: 7px 14px;
     color: rgb(255, 255, 255);
@@ -155,20 +161,20 @@ body {
     border-radius: 15px;
 }
 
-.page-header__page-nav__button:hover > a {
+.header__page-nav__button:hover > a {
     color: rgb(51, 51, 51);
 }
 
-.page-header__page-nav__button > a::after {
+.header__page-nav__button > a::after {
     content: '';
     display: block;
     height: 1px;
     background-color:rgba(255, 255, 255, .2);
 }
 
-.page-header__page-nav__button--active > a,
-.page-header__page-nav__button--active > a:hover,
-.page-header__page-nav__button--active > a:active {
+.header__page-nav__button--active > a,
+.header__page-nav__button--active > a:hover,
+.header__page-nav__button--active > a:active {
     color: rgb(255, 255, 255);
     background-color: #d07058;
 }
@@ -179,20 +185,21 @@ body {
 ***Page navigation CATALOG DROPDOWN styles (START)
 */
 
-.page-header__page-nav__catalog-dropdown {
+.header__page-nav__catalog-dropdown {
     position: absolute;
     padding-top: 5px;
 }
 
-.page-header__page-nav__button--catalog {
+.header__page-nav__button--catalog {
     position: relative;
 }
 
-.page-header__page-nav__button--catalog:hover .page-header__page-nav__catalog-dropdown__content{
+.header__page-nav__button--catalog:active .header__page-nav__catalog-dropdown__content,
+.header__page-nav__button--catalog:hover .header__page-nav__catalog-dropdown__content{
     display: block;
 }
 
-.page-header__page-nav__catalog-dropdown__content {
+.header__page-nav__catalog-dropdown__content {
     display: none;
     padding: 0;
     width: 143px;
@@ -202,42 +209,42 @@ body {
     background-color: rgb(248, 247, 244);
 }
 
-.page-header__page-nav__catalog-dropdown__content__button {
+.header__page-nav__catalog-dropdown__content__button {
     padding: 0 6px 0 6px;
     color: rgb(51, 51, 51);
 }
 
-.page-header__page-nav__catalog-dropdown__content__button > a {
+.header__page-nav__catalog-dropdown__content__button > a {
     display: block;
     padding: 9px 0 9px 15px;
     color: inherit;
 }
 
-.page-header__page-nav__catalog-dropdown__content__button:first-child {
+.header__page-nav__catalog-dropdown__content__button:first-child {
     font-weight: bold;
     border-radius: 5px 5px 0 0;
 }
 
-.page-header__page-nav__catalog-dropdown__content__button:first-child > a {
+.header__page-nav__catalog-dropdown__content__button:first-child > a {
     border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
-.page-header__page-nav__catalog-dropdown__content__button:last-child {
+.header__page-nav__catalog-dropdown__content__button:last-child {
     border-radius: 0 0 5px 5px;
 }
 
-.page-header__page-nav__catalog-dropdown__content__button:hover {
+.header__page-nav__catalog-dropdown__content__button:hover {
     background-color: rgb(251, 222, 215);
 }
 
-.page-header__page-nav__catalog-dropdown__content__button:active {
+.header__page-nav__catalog-dropdown__content__button:active {
     background-color: rgb(246, 181, 165);
 }
 
-.page-header__page-nav__catalog-dropdown__content__button--active:active,
-.page-header__page-nav__catalog-dropdown__content__button--active:hover,
-.page-header__page-nav__catalog-dropdown__content__button--active:focus,
-.page-header__page-nav__catalog-dropdown__content__button--active {
+.header__page-nav__catalog-dropdown__content__button--active:active,
+.header__page-nav__catalog-dropdown__content__button--active:hover,
+.header__page-nav__catalog-dropdown__content__button--active:focus,
+.header__page-nav__catalog-dropdown__content__button--active {
     color: #ffffff;
     background-color: rgb(208, 112, 88);
 }
@@ -250,11 +257,11 @@ body {
 ***Page header USER NAVIGATION style (START)
 */
 
-.page-header__user-nav {
+.header__user-nav {
     display: flex;
 }
 
-.page-header__user-nav__container {
+.header__user-nav__container {
     margin-left: auto; 
 }
 
@@ -262,7 +269,7 @@ body {
 /*
 ***Page header USER NAVIGATION BUTTONS styles (START)
 */
-.page-header__user-nav__button::before {
+.header__user-nav__button::before {
     content: '';
     display: block;
     position: absolute;
@@ -272,7 +279,7 @@ body {
     background-image: url(/img/sprites.png);
 }
 
-.page-header__user-nav__button {
+.header__user-nav__button {
     position: relative;
     display: block;
     margin-left: 10px;
@@ -286,50 +293,50 @@ body {
     cursor: pointer;
 }
 
-.page-header__user-nav__button:focus {
+.header__user-nav__button:focus {
     outline: none;
 }
 
-.page-header__user-nav__button:focus,
-.page-header__user-nav__button:hover {
+.header__user-nav__button:focus,
+.header__user-nav__button:hover {
     color: rgb(0, 0, 0);
     background-color: rgb(248, 247, 244);
 }
 
-.page-header__user-nav__button--search {
+.header__user-nav__button--search {
     padding-left: 16px;
     font-size: 0;
 }
 
-.page-header__user-nav__button--search::before {
+.header__user-nav__button--search::before {
     left: 8px;
     background-position: -155px -10px;
 }
 
-.page-header__user-nav__button--search:focus::before,
-.page-header__user-nav__button--search:hover::before {
+.header__user-nav__button--search:focus::before,
+.header__user-nav__button--search:hover::before {
     background-position: -92px -114px;
 }
 
-.page-header__user-nav__button--login::before {
+.header__user-nav__button--login::before {
     background-position: -51px -114px;
 }
 
-.page-header__user-nav__button--login:focus::before,
-.page-header__user-nav__button--login:hover::before {
+.header__user-nav__button--login:focus::before,
+.header__user-nav__button--login:hover::before {
     background-position: -10px -114px;
 }
 
-.page-header__user-nav__button--chart::before {
+.header__user-nav__button--chart::before {
     background-position: -114px -50px;
 }
 
-.page-header__user-nav__button--chart:focus::before,
-.page-header__user-nav__button--chart:hover::before {
+.header__user-nav__button--chart:focus::before,
+.header__user-nav__button--chart:hover::before {
     background-position: -114px -10px;
 }
 
-.page-header__user-nav__button--big {
+.header__user-nav__button--big {
     padding: 15px 25px;
     font-size: 18px;
     font-weight: bold;
@@ -340,22 +347,27 @@ body {
 ***********************************************************
 ***Page header USER NAVIGATION POPUPS styles (START)
 ***********************************************************
+*/
+
+
+/*
 ***Page header USER NAVIGATION POPUPS SEARCH styles (START)
 */
 
-.page-header__user-nav__search:hover .page-header__user-nav__search__container {
+.header__user-nav__search:focus .header__user-nav__search__container,
+.header__user-nav__search:hover .header__user-nav__search__container {
     display: block;
     transform: translateX(-300px);
 }
 
-.page-header__user-nav__search__container {
+.header__user-nav__search__container {
     display: none;
     position: absolute;
     padding-top: 5px;
     min-width: 340px;
 }
 
-.page-header__user-nav__search__form {
+.header__user-nav__search__form {
     position: relative;
     padding: 20px 15px;
     border-radius: 6px;
@@ -368,52 +380,52 @@ body {
 ***Page header USER NAVIGATION POPUPS LOGIN styles (START)
 */
 
-.page-header__user-nav__login:hover .page-header__user-nav__login__container {
+.header__user-nav__login:hover .header__user-nav__login__container {
     display: block;
 }
 
-.page-header__user-nav__login__container {
+.header__user-nav__login__container {
     display: none;
-    transform: translateX(-180px);
+    transform: translateX(-215px);
     position: absolute;
     padding-top: 5px;
 }
 
-.page-header__user-nav__login__form {
+.header__user-nav__login__form {
     padding: 20px;
-    min-width: 240px;
+    max-width: 277px;
     border-radius: 5px;
     background-color: rgb(248, 247, 244);
 }
 
-.page-header__user-nav__login__form > * {
+.header__user-nav__login__form > * {
     margin-top: 20px;
 }
 
-.page-header__user-nav__login__form > *:first-child {
+.header__user-nav__login__form > *:first-child {
     margin-top: 0;
 }
 
 
-.page-header__user-nav__login__form__container {
+.header__user-nav__login__form__container {
     display: flex;
     justify-content: space-between;
 }
 
-.page-header__user-nav__login__form__link-container {
+.header__user-nav__login__form__link-container {
     font-size: 13px;
     line-height: 24px;
     color: rgb(0, 0, 0);
 }
 
-.page-header__user-nav__login__form__link-container a {
+.header__user-nav__login__form__link-container a {
     display: block;
     text-decoration: underline;
 }
 
-.page-header__user-nav__login__form__link-container a:active,
-.page-header__user-nav__login__form__link-container a:hover,
-.page-header__user-nav__login__form__link-container a:visited {
+.header__user-nav__login__form__link-container a:active,
+.header__user-nav__login__form__link-container a:hover,
+.header__user-nav__login__form__link-container a:visited {
     color: black;
 }
 
@@ -424,18 +436,18 @@ body {
 */
 
 
-.page-header__user-nav__chart:hover .page-header__user-nav__chart__container {
+.header__user-nav__chart:hover .header__user-nav__chart__container {
     display: block;
 }
 
-.page-header__user-nav__chart__container {
+.header__user-nav__chart__container {
     display: none;
     transform: translateX(-445px);
     position: absolute;
     padding-top: 5px;
 }
 
-.page-header__user-nav__chart__form {
+.header__user-nav__chart__form {
     padding: 20px 15px;
     min-width: 540px;
     border-radius: 5px;
@@ -443,11 +455,11 @@ body {
     font-size: 13px;
 }
 
-.page-header__user-nav__chart__form__item-list {
+.header__user-nav__chart__form__item-list {
     border-bottom: 1px solid rgb(202, 202, 199);
 }
 
-.page-header__user-nav__chart__form__item-list__button {
+.header__user-nav__chart__form__item-list__button {
     padding: 0;
     font-size: 0;
     width: 20px;
@@ -456,23 +468,23 @@ body {
     background-color: transparent;
 }
 
-.page-header__user-nav__chart__form__item-list__button__icon {
+.header__user-nav__chart__form__item-list__button__icon {
     font-size: 16px;
     font-weight: 900;
 }
 
-.page-header__user-nav__chart__form__submission {
+.header__user-nav__chart__form__submission {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
 }
 
-.page-header__user-nav__chart__form__submission__button {
+.header__user-nav__chart__form__submission__button {
     margin-top: 15px;
 }
 
-.page-header__user-nav__chart__form__submission > span {
+.header__user-nav__chart__form__submission > span {
     margin-top: 15px;
     display: block;
     font-weight: bold;
@@ -489,7 +501,7 @@ body {
 ***Page header WORKING HOURS section styles (START)
 */
 
-.page-header__working-hours {
+.header__working-hours {
     text-align: right;
     float: right;
     margin: 0;
@@ -497,7 +509,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.page-header__working-hours__phone-number {
+.header__working-hours__phone-number {
     display: block;
     font-weight: bold;
     font-size: 22px;
@@ -510,5 +522,69 @@ body {
 *************************************************
 *************************************************
 ***MAIN styles (START)
+*************************************************
+***SLIDER style (START)
 */
+.page_main__slider {
+    position: relative;
+    align-items: center;
+    padding-top: 320px;
+}
 
+.page_main__slider--first {
+    display: flex;
+    flex-direction: column;
+}
+
+.page_main__slider--first__button {
+    display: block;
+    margin: 40px auto 0 auto;
+}
+
+
+.page_main__slider__heading {
+    display: block;
+    margin: 0 auto;
+    max-width: 665px;
+    text-align: center;
+    font-size: 60px;
+    line-height: 60.35px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.page_main__slider__radio__fieldset {
+    position: absolute;
+    bottom: 23px;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.page_main__slider__radio__container {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.page_main__slider__radio__button-container {
+    display: block;
+}
+
+.page_main__slider__radio__button {
+    display: block;
+    width: 21px;
+    height: 21px;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.page_main__slider__radio__button:hover {
+    background-color: rgb(178, 193, 183);
+}
+
+.page_main__slider__radio__button-container input[type="radio"]:checked ~ .page_main__slider__radio__button {
+    background-color: white;
+}
