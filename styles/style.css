@@ -2,8 +2,17 @@
 ***COMMON STYLES (START)
 */
 
+/*
+Possible body background colours: 
+    GREEN: rgb(132, 157, 143);
+    BLUE: rgb(137, 150, 166);
+    BROWN rgb(157, 139, 132);
+*/
 body {
-    background: #849d8f;
+    background: rgb(132, 157, 143);
+    background-image: url("/img/background_image--green.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
 }
 
 .visually-hidden {
@@ -192,6 +201,7 @@ body {
 
 .header__page-nav__button--catalog {
     position: relative;
+    z-index: 1;
 }
 
 .header__page-nav__button--catalog:active .header__page-nav__catalog-dropdown__content,
@@ -365,6 +375,7 @@ body {
     position: absolute;
     padding-top: 5px;
     min-width: 340px;
+    z-index: 1;
 }
 
 .header__user-nav__search__form {
@@ -389,6 +400,7 @@ body {
     transform: translateX(-215px);
     position: absolute;
     padding-top: 5px;
+    z-index: 1;
 }
 
 .header__user-nav__login__form {
@@ -445,6 +457,7 @@ body {
     transform: translateX(-445px);
     position: absolute;
     padding-top: 5px;
+    z-index: 1;
 }
 
 .header__user-nav__chart__form {
@@ -521,9 +534,9 @@ body {
 ***PAGE HEADER SECTION (END)
 *************************************************
 *************************************************
-***MAIN styles (START)
+***MAIN SECTION (START)
 *************************************************
-***SLIDER style (START)
+***Page-Main SLIDER styles (START)
 */
 .page_main__slider {
     position: relative;
@@ -579,12 +592,55 @@ body {
     font-size: 0;
     border-radius: 50%;
     cursor: pointer;
+    transition: background-color 0.7s;
 }
 
 .page_main__slider__radio__button:hover {
     background-color: rgb(178, 193, 183);
 }
 
-.page_main__slider__radio__button-container input[type="radio"]:checked ~ .page_main__slider__radio__button {
+.page_main__slider__radio__button-container input[type="radio"]:checked ~ 
+.page_main__slider__radio__button {
     background-color: white;
+}
+
+/*
+Page-Main SLIDER styles (END)
+*******************************
+Page-Main BANNERS styles (START)
+********************************
+*/
+
+.page_main__banners {
+    display: flex;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.page_main__banners__banner {
+    padding: 23px 20px;
+    border-radius: 12px;
+    background-image: url("/img/background_banner--chocolate.png");
+    background-position: 50% 50%;
+    color: white;
+}
+
+.page_main__banners__banner:first-of-type {
+    margin-right: 20px;
+    background-image: url("/img/background_banner--raspberry.png");
+}
+
+.page_main__banners__banner strong {
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.page_main__banners__banner p {
+    margin:  25px 0 44px 0;
+}
+
+.page_main__banners__banner__button_wrapper {
+    text-align: right;
 }

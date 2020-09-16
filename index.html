@@ -22,15 +22,19 @@
           <li class="header__page-nav__button header__page-nav__button--catalog" tabindex="0"><a href="#">Католог</a>
             <div class="header__page-nav__catalog-dropdown">
               <ul class="header__page-nav__catalog-dropdown__content header__popup__shadow">
-                <li class="header__page-nav__catalog-dropdown__content__button" tabindex="0"><a href="#">Новинки</a>
+                <li class="header__page-nav__catalog-dropdown__content__button" tabindex="0">
+                  <a href="#">Новинки</a>
                 </li>
-                <li class="header__page-nav__catalog-dropdown__content__button " tabindex="0"><a href="#">Сливочное</a>
+                <li class="header__page-nav__catalog-dropdown__content__button " tabindex="0">
+                  <a href="#">Сливочное</a>
                 </li>
-                <li class="header__page-nav__catalog-dropdown__content__button" tabindex="0"><a href="#">Щербеты</a>
+                <li class="header__page-nav__catalog-dropdown__content__button" tabindex="0">
+                  <a href="#">Щербеты</a>
                 </li>
-                <li class="header__page-nav__catalog-dropdown__content__button" tabindex="0"><a href="#">Фруктовый
-                    лед</a></li>
-                <li class="header__page-nav__catalog-dropdown__content__button" tabindex="0"><a href="#">Мелорин</a>
+                <li class="header__page-nav__catalog-dropdown__content__button" tabindex="0">
+                  <a href="#">Фруктовый лед</a></li>
+                <li class="header__page-nav__catalog-dropdown__content__button" tabindex="0">
+                  <a href="#">Мелорин</a>
                 </li>
               </ul>
             </div>
@@ -41,7 +45,7 @@
       </nav>
       <nav class="header__user-nav__container">
         <ul class="header__user-nav">
-          <li class="header__user-nav__search" tabindex="0">
+          <li class="header__user-nav__search">
             <button class="header__user-nav__button header__user-nav__button--search">Поиск</button>
             <div class="header__user-nav__search__container">
               <form class="header__user-nav__search__form header__popup__shadow">
@@ -50,7 +54,7 @@
               </form>
             </div>
           </li>
-          <li class="header__user-nav__login" tabindex="0">
+          <li class="header__user-nav__login">
             <button class="header__user-nav__button header__user-nav__button--login">Вход</button>
             <div class="header__user-nav__login__container">
               <form class="header__user-nav__login__form header__popup__shadow">
@@ -66,7 +70,7 @@
               </form>
             </div>
           </li>
-          <li class="header__user-nav__chart" tabindex="0">
+          <li class="header__user-nav__chart">
             <button class="header__user-nav__button header__user-nav__button--chart">Корзина</button>
             <div class="header__user-nav__chart__container">
               <form class="header__user-nav__chart__form header__popup__shadow">
@@ -146,17 +150,21 @@
       </fieldset>
     </section>
     <section class="page_main__banners">
-      <h2 class="visualy_hidden">Специальные предложения</h2>
+      <h2 class="visually-hidden">Специальные предложения</h2>
       <section class="page_main__banners__banner">
         <strong>Малинка даром!</strong>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <button class="button--primary button--regular" type="button">Хочу варенье!</button>
+        <div class="page_main__banners__banner__button_wrapper">
+          <button class="button--primary button--regular" type="button">Хочу варенье!</button>
+        </div>
       </section>
       <section class="page_main__banners__banner">
         <strong>Шоколадки даром!</strong>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
         </p>
-        <button class="button--primary button--regular" type="button">Хочу шоколадки!</button>
+        <div class="page_main__banners__banner__button_wrapper">
+          <button class="button--primary button--regular" type="button">Хочу шоколадки!</button>
+        </div>
       </section>
     </section>
     <section class="page_main__hits">
@@ -216,7 +224,7 @@
       <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </article>
     <section class="page-main__distribution">
-      <h2 class="visualy_hidden">Разсылка</h2>
+      <h2 class="visually-hidden">Разсылка</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
         всего самого вкусного, что у нас происходит. Обещаем не спамить
         и не слать всякой ненужной ерунды. Честно =)</p>
@@ -227,7 +235,7 @@
       </form>
     </section>
     <section class="page-main__map">
-      <h2 class="visualy_hidden">Карта</h2>
+      <h2 class="visually-hidden">Карта</h2>
       <section>
         <h3>Адрес</h3>
         <p>Адрес главного офиса и офлайн-магазина: <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
@@ -235,11 +243,11 @@
         <button class="button--primary button--regular">Форма обратной связи</button>
         <form class="feedback_form">
           <span>Мы обязательно вам ответим!</span>
-          <label class="visualy_hidden" for="feedback_name">Имя</label>
+          <label class="visually-hidden" for="feedback_name">Имя</label>
           <input id="feedback_name" type="text" placeholder="Как вас зовут?">
-          <label class="visualy_hidden" for="feedback_email">Електронная почта</label>
+          <label class="visually-hidden" for="feedback_email">Електронная почта</label>
           <input id="feedback_email" type="email" placeholder="Ваша почта для ответа">
-          <label class="visualy_hidden" id="feedback_text">Поле сообщения</label>
+          <label class="visually-hidden" id="feedback_text">Поле сообщения</label>
           <textarea id="feedback_text" placeholder="Напишите что-нибуть..."></textarea>
           <button class="button--primary button--regular" type="submit">Отправить</button>
           <button type="button">Закрыть</button>
