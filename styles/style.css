@@ -743,3 +743,80 @@ Page-Main HITS-LIST styles (START)
 /*
 Page-Main HITS-LIST styles (END)
 ********************************
+Page-Main BENEFITS styles (START)
+*/
+
+.page-main__benefits {
+    background-image: url("/img/background-waffles.jpg");
+    background-origin: border-box;
+    border-radius: 14px;
+    padding: 27px 21px 27px 34px;
+}
+
+.page-main__benefits__shop_description {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.page-main__benefits__benefits_list {
+    padding: 0;
+    margin: 0;
+    columns: 2;
+    column-gap: 30px;
+    margin-top: 6px;
+    list-style: none;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.page-main__benefits__benefits_list__benefits_list_item {
+    position: relative;
+    margin-bottom: 28px;
+    padding: 18px 0 0 57px;
+}
+
+.page-main__benefits__benefits_list__benefits_list_item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    top: 0px;
+    left: 0px;
+}
+
+/*
+SPRITESHEET COORDS:
+
+ICECREAM -79px -79px;
+LEAF -10px -79px;
+COW -79px -10px;
+THERMOMETR -10px -10px;
+*/
+
+.page-main__benefits__benefits_list__benefits_list_item:nth-child(1)::before {
+    background-image: url("/img/benefits_icons.png");
+    background-position: -79px -79px;;
+}
+
+.page-main__benefits__benefits_list__benefits_list_item:nth-child(2)::before {
+    background-image: url("/img/benefits_icons.png");
+    background-position: -10px -79px;
+}
+
+.page-main__benefits__benefits_list__benefits_list_item:nth-child(3)::before {
+    background-image: url("/img/benefits_icons.png");
+    background-position: -79px -10px;
+}
+
+.page-main__benefits__benefits_list__benefits_list_item:nth-child(4)::before {
+    background-image: url("/img/benefits_icons.png");
+    background-position: -10px -10px;
+}
+
+/*
+Page-Main BENEFITS styles (END)
+*/
