@@ -51,7 +51,7 @@ body {
 }
 
 .button--primary:active {
-    background-image: linear-gradient(to bottom, rgb(242, 104, 67), rgb(231, 75, 54));
+    background-image: linear-gradient(to bottom,rgb(215, 70, 50),rgb(225, 97, 62));
     box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
 }
 
@@ -472,6 +472,10 @@ body {
     border-bottom: 1px solid rgb(202, 202, 199);
 }
 
+.header__user-nav__chart__form__item-list tr{
+    height: 53px;
+}
+
 .header__user-nav__chart__form__item-list__button {
     padding: 0;
     font-size: 0;
@@ -502,6 +506,10 @@ body {
     display: block;
     font-weight: bold;
     font-size: 15px;
+}
+
+.header__user-nav__chart__form__item-list__item_cost {
+    color: rgb(178, 178, 177);
 }
 
 /*
@@ -644,3 +652,94 @@ Page-Main BANNERS styles (START)
 .page_main__banners__banner__button_wrapper {
     text-align: right;
 }
+/*
+Page-Main BANNERS styles (END)
+******************************
+Page-Main HITS-LIST styles (START)
+*/
+
+.page_main__hits__hits_list {
+    display: flex;
+    padding: 0;
+    margin: 40px 0 0 0;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.goods_item {
+    display: block;
+    position: relative;
+    padding: 6px 18px 20px 18px;
+    max-width: 260px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.goods_item--hit::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    background-image: url("/img/hit.png");
+    z-index: 10;
+}
+
+.goods_item:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);      
+}
+
+.goods_item:hover .goods_item__button {
+    visibility: visible;
+}
+
+.goods_item__container {
+    display: block;
+    position: relative;
+    padding-top: 275px;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+
+.goods_item:nth-child(1) .goods_item__container{
+    background-image: url("/img/goods/1.png");
+}
+
+.goods_item:nth-child(2) .goods_item__container{
+    background-image: url("/img/goods/2.png");
+}
+
+.goods_item:nth-child(3) .goods_item__container{
+    background-image: url("/img/goods/3.png");
+}
+
+.goods_item:nth-child(4) .goods_item__container{
+    background-image: url("/img/goods/4.png");
+}
+
+.goods_item__item_price {
+    position: absolute;
+    left: 0px;
+    top: 215px;
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.goods_item__button {
+    margin-top: 15px;
+    visibility: hidden;
+}
+
+/*
+Page-Main HITS-LIST styles (END)
+********************************

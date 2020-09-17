@@ -85,7 +85,7 @@
                     <td><img src="/img/Мороженко 1.png" alt="mock"></td>
                     <td width="230px" class="header__user-nav__chart__form__item-list__item-name">Пломбир с апельсиновым
                       джемом</td>
-                    <td>1,5 кг x <span>200 руб.</span></td>
+                    <td>1,5 кг x <span class="header__user-nav__chart__form__item-list__item_cost">200 руб.</span></td>
                     <td>300 руб.</td>
                   </tr>
                   <tr>
@@ -95,7 +95,7 @@
                     <td><img src="/img/Мороженко 2.png" alt="mock"></td>
                     <td class="header__user-nav__chart__form__item-list__item-name">Клубничный пломбир с присыпкой из
                       белого шоколада</td>
-                    <td>1,5 кг x <span>300 руб.</span></td>
+                    <td>1,5 кг x <span class="header__user-nav__chart__form__item-list__item_cost">300 руб.</span></td>
                     <td>450 руб.</td>
                   </tr>
                 </table>
@@ -169,35 +169,41 @@
     </section>
     <section class="page_main__hits">
       <ul class="page_main__hits__hits_list">
-        <li class="page_main__hits__hits_list__hits_list_item">
-          <a href="#">
-            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-          </a>
-          <span>310 Р/кг</span>
+        <li class="goods_item goods_item--hit">
+          <span class="goods_item__container">
+            Сливочное с апельсиновым джемом и цитрусовой стружкой
+            <span class="goods_item__item_price">310 Р/кг</span>
+          </span>
+          <button class="button--primary button--regular goods_item__button">Быстрый просмотр</button>
         </li>
-        <li class="page_main__hits__hits_list__hits_list_item">
-          <a href="#">
-            <h3>Сливочно-кофейное с кусочками шоколада</h3>
-          </a>
-          <span>380 Р/кг</span>
+        <li class="goods_item goods_item--hit">
+          <span class="goods_item__container">
+            Сливочно-кофейное с кусочками шоколада
+            <span class="goods_item__item_price">380 Р/кг</span>
+          </span>
+          <button class="button--primary button--regular goods_item__button">Быстрый просмотр</button>
         </li>
-        <li class="page_main__hits__hits_list__hits_list_item">
-          <a href="#">
-            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-          </a>
-          <span>355 Р/кг</span>
+        <li class="goods_item goods_item--hit">
+          <span class="goods_item__container">
+            Сливочно-клубничное с присыпкой из белого шоколада          
+            <span class="goods_item__item_price">355 Р/кг</span>
+          </span>
+          <button class="button--primary button--regular goods_item__button">Быстрый просмотр</button>
         </li>
-        <li class="page_main__hits__hits_list__hits_list_item">
-          <a href="#">
-            <h3>Сливочное крем-брюле с карамельной подливкой</h3>
-          </a>
-          <span>415 Р/кг</span>
+        <li class="goods_item goods_item--hit">
+          <span class="goods_item__container">
+            Сливочное крем-брюле с карамельной подливкой          
+            <span class="goods_item__item_price">415 Р/кг</span>
+          </span>
+          <button class="button--primary button--regular goods_item__button">Быстрый просмотр</button>
         </li>
       </ul>
     </section>
     <section class="page-main__benefits">
-      <h2>Приемущества</h2>
-      <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+      <h2 class="visually-hidden">Приемущества</h2>
+      <p class="page-main__benefits__shop_description">
+        Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
+      </p>
       <ul class="page-main__benefits__benefits_list">
         <li class="page-main__benefits__benefits_list__benefits_list_item">
           Все наше мороженое изготавливается на собственном
