@@ -81,8 +81,9 @@ body {
     border: 1px solid rgb(211, 211, 210);
     border-radius: 5px;
     box-sizing: border-box;
-    width: 100%;
 }
+
+/*Making paddings smaller on hover, focus and active to avoid sizing change */
 
 .text-input--primary:hover {
     padding: 14px;
@@ -352,6 +353,9 @@ body {
     font-weight: bold;
 }
 
+.header__user-nav__text-input {
+    width: 100%;
+}
 /*
 ***Page header USER NAVIGATION BUTTONS styles (END)
 ***********************************************************
@@ -819,4 +823,111 @@ THERMOMETR -10px -10px;
 
 /*
 Page-Main BENEFITS styles (END)
+********************************************************
+Page-Main BLOG and DISTRIBUTION CONTAINER styles (START)
+*/
+
+.blog-distribution__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.blog-distribution__container > * {
+    box-sizing: border-box;
+    border-radius: 11px;
+    max-width: 560px;
+    flex-grow: 1;
+}
+
+/*
+Page-Main BLOG and DISTRIBUTION CONTAINER styles (END)
+******************************************************
+Page-Main BLOG styles (START)
+******************************************************
+*/
+
+.page-main__blog {
+    padding:  24px 20px;
+    background-color: rgb(255, 255, 255);
+    background-image: url("/img/background__blog--strawberry.jpg");
+    background-repeat: no-repeat;
+    background-position: 120% 20%;
+}
+
+.page-main__blog__heading {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.page-main__blog__text {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    width: 280px;
+    text-decoration-skip-ink: none;
+}
+
+.page-main__blog__text a:hover,
+.page-main__blog__text a:visited {
+    color: inherit;
+}
+/*
+Page-Main BLOG styles (END)
+*************************************
+Page-Main DISTRIBUTION styles (START)
+*/
+
+.page-main__distribution {    
+    position: relative;
+    border: 5px solid transparent;
+    border-radius: 11px;
+    background-clip: padding-box;
+    background-color: rgb(248, 247, 244);
+    padding: 30px 21px 35px 21px;
+}
+
+/*Pseudo-element is for round border*/
+.page-main__distribution::after {    
+    content: '';
+    position: absolute;
+    top: -4px; bottom: -4px;
+    left: -4px; right: -4px;
+    z-index: -1;
+    background: repeating-linear-gradient(-45deg, 
+        rgb(146, 205, 255), rgb(146, 205, 255) 5px, 
+        rgb(248, 247, 244) 5px, rgb(248, 247, 244) 10px,
+        rgb(254, 158, 144) 10px, rgb(254, 158, 144)  15px,
+        rgb(248, 247, 244) 15px, rgb(248, 247, 244) 20px);
+    border-radius: 11px;
+}
+
+.page-main__distribution__text {
+    margin: 0;
+    font-size: 16px;
+}
+
+.page-main__distribution__form {
+    display: flex;
+    margin-top: 37px;
+    justify-content: space-between;
+}
+
+.page-main__distribution__form__text-input {
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 14px;
+    flex-grow: 1;
+}
+
+.page-main__distribution__form__text-input:hover,
+.page-main__distribution__form__text-input:active,
+.page-main__distribution__form__text-input:focus {
+    padding: 9px 13px;
+}
+
+/*
+Page-Main DISTRIBUTION styles (END)
 */

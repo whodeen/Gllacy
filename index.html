@@ -49,7 +49,7 @@
             <button class="header__user-nav__button header__user-nav__button--search">Поиск</button>
             <div class="header__user-nav__search__container">
               <form class="header__user-nav__search__form header__popup__shadow">
-                <input class="text-input--primary header__user-nav__search__form__input" type="text"
+                <input class="text-input--primary  header__user-nav__text-input header__user-nav__search__form__input" type="text"
                   placeholder="Что ищем?">
               </form>
             </div>
@@ -58,8 +58,8 @@
             <button class="header__user-nav__button header__user-nav__button--login">Вход</button>
             <div class="header__user-nav__login__container">
               <form class="header__user-nav__login__form header__popup__shadow">
-                <input class="text-input--primary" type="email" placeholder="Электронная почта">
-                <input class="text-input--primary" type="password" placeholder="Пароль">
+                <input class="text-input--primary  header__user-nav__text-input" type="email" placeholder="Электронная почта">
+                <input class="text-input--primary  header__user-nav__text-input" type="password" placeholder="Пароль">
                 <div class="header__user-nav__login__form__container">
                   <button class="button--primary header__user-nav__button--big" type="submit">Войти</button>
                   <div class="header__user-nav__login__form__link-container">
@@ -224,22 +224,22 @@
           астаять в пути и позволяет сохранить превосходный вкус.</li>
       </ul>
     </section>
-    <article class="page-main__blog">
-      <h2>Новости блога</h2>
-      <span>Новое в нашем блоге</span>
-      <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-    </article>
-    <section class="page-main__distribution">
-      <h2 class="visually-hidden">Разсылка</h2>
-      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
-        всего самого вкусного, что у нас происходит. Обещаем не спамить
-        и не слать всякой ненужной ерунды. Честно =)</p>
-      <form>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email">
-        <button class="button--primary button--regular" type="submit">Отправить</button>
-      </form>
-    </section>
+    <div class="blog-distribution__container">
+      <article class="page-main__blog">
+        <h2 class="page-main__blog__heading">Новое в нашем блоге</h2>
+        <p class="page-main__blog__text"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
+      </article>
+      <section class="page-main__distribution">
+        <h2 class="visually-hidden">Разсылка</h2>
+        <p class="page-main__distribution__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+          всего самого вкусного, что у нас происходит. Обещаем не спамить
+          и не слать всякой ненужной ерунды. Честно =)</p>
+        <form class="page-main__distribution__form">
+          <label class="visually-hidden" for="email">E-mail</label>
+          <input class="page-main__distribution__form__text-input text-input--primary" type="email" id="email" name="email"><button class="button--primary button--regular" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
     <section class="page-main__map">
       <h2 class="visually-hidden">Карта</h2>
       <section>
