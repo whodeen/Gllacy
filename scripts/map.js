@@ -19,9 +19,6 @@ function initMap() {
     map: map,
     icon: 'img/map_pin.svg',
   });
-
-  console.log(marker);
-  console.log(map);
 }
 
 //,
