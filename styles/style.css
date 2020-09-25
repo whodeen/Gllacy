@@ -10,10 +10,10 @@ Possible body background colours:
 */
 
 body {
-  background: rgb(132, 157, 143);
-  background-image: url("../img/background_image--green.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
+  transition: all;
+  transition-duration: 0.4s;
 }
 
 .visually-hidden {
@@ -564,12 +564,47 @@ body {
   padding-top: 320px;
 }
 
+.body_first_slide {
+  background-color: rgb(132, 157, 143);
+  background-image: url("../img/background_image--green.png");
+}
+
+.body_second_slide {
+  background-color: rgb(137, 150, 166);
+  background-image: url("../img/background_image--blue.png");
+}
+
+.body_third_slide {
+  background-color: rgb(157, 139, 132);
+  background-image: url("../img/background_image--brown.png");
+}
+
 .page_main__slider--first {
   display: flex;
   flex-direction: column;
 }
 
+.page_main__slider--second {
+  display: flex;
+  flex-direction: column;
+}
+
+.page_main__slider--third {
+  display: flex;
+  flex-direction: column;
+}
+
 .page_main__slider--first__button {
+  display: block;
+  margin: 40px auto 0 auto;
+}
+
+.page_main__slider--second__button {
+  display: block;
+  margin: 40px auto 0 auto;
+}
+
+.page_main__slider--third__button {
   display: block;
   margin: 40px auto 0 auto;
 }
@@ -1206,7 +1241,7 @@ THERMOMETR -10px -10px;
   height: 13px;
   top: 2.5px;
   left: -22px;
-  background-image: url("..img/heart.svg");
+  background-image: url("../img/heart.svg");
   background-position: 50% 50%;
 }
 

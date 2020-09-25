@@ -1,4 +1,4 @@
-const VISIBILITY_CLASS = 'visually-hidden'
+const VISIBILITY_CLASS = 'visually-hidden';
 
 const buttonClose = document.getElementById('feedback_form__close');
 const buttonOpen = document.getElementById('feedback_form__open');
@@ -14,10 +14,12 @@ function visibilityToggler(element) {
     }
 }
 
-buttonClose.addEventListener("click", () => {
+window.visibilityToggler = visibilityToggler;
+
+buttonClose.addEventListener('click', () => {
     visibilityToggler(feedbackForm);
 });
 
-buttonOpen.addEventListener("click", () => {
+buttonOpen.addEventListener('click', () => {
     visibilityToggler(feedbackForm);
 });

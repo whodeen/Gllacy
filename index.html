@@ -12,7 +12,7 @@
   <title>Gllacy - Main Page</title>
 </head>
 
-<body>
+<body class="body_first_slide">
   <header class="page-container">
     <div class="header">
       <a href="index.html">
@@ -162,26 +162,34 @@
           <h3 class="page_main__slider__heading">
             Шоколадный пломбир и лимонный сорбет
           </h3>
-          <button class="button--primary button--big">Давайте оба!</button>
+          <div class="page_main__slider__bottom">
+            <button class="button--primary button--big page_main__slider--second__button">
+              Давайте оба!
+            </button>
+          </div>
         </section>
         <section class="page_main__slider--third visually-hidden">
           <h3 class="page_main__slider__heading">
             Пломбир с помадкой и клубничный щербет
           </h3>
-          <button class="button--primary button--big">Давайте оба!</button>
+          <div class="page_main__slider__bottom">
+            <button class="button--primary button--big page_main__slider--third__button">
+              Давайте оба!
+            </button>
+          </div>
         </section>
         <fieldset class="page_main__slider__radio__fieldset">
           <div class="page_main__slider__radio__container">
             <label class="page_main__slider__radio__button-container">
-              <input class="visually-hidden" type="radio" name="page_main__slider__radio slider_radio" checked />
+              <input id="slider_radio_first" class="visually-hidden" type="radio" name="page_main__slider__radio slider_radio" checked />
               <span class="page_main__slider__radio__button">Лучшее №1</span>
             </label>
             <label class="page_main__slider__radio__button-container">
-              <input class="visually-hidden" type="radio" name="page_main__slider__radio slider_radio" />
+              <input id="slider_radio_second" class="visually-hidden" type="radio" name="page_main__slider__radio slider_radio" />
               <span class="page_main__slider__radio__button">Лучшее №2</span>
             </label>
             <label class="page_main__slider__radio__button-container">
-              <input class="visually-hidden" type="radio" name="page_main__slider__radio slider_radio" />
+              <input id="slider_radio_third" class="visually-hidden" type="radio" name="page_main__slider__radio slider_radio" />
               <span class="page_main__slider__radio__button">Лучшее №3</span>
             </label>
           </div>
@@ -380,6 +388,7 @@
   <script defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWt0394uTTg78Ikem7ec-V4SQnerSTruk&callback=initMap"></script>
   <script src="scripts/visibility_toggler.js"></script>
+  <script src="/scripts/slider.js"></script>
 </body>
 
 </html>
