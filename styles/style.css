@@ -11,7 +11,7 @@ Possible body background colours:
 
 body {
   background: rgb(132, 157, 143);
-  background-image: url("/img/background_image--green.png");
+  background-image: url("../img/background_image--green.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
 }
@@ -299,7 +299,7 @@ body {
   left: 16px;
   width: 21px;
   height: 19px;
-  background-image: url(/img/sprites.png);
+  background-image: url(../img/sprites.png);
 }
 
 .header__user-nav__button {
@@ -493,6 +493,7 @@ body {
   height: 20px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header__user-nav__chart__form__item-list__button__icon {
@@ -636,19 +637,21 @@ body {
   font-size: 18px;
   font-weight: bold;
   line-height: 22px;
+  justify-content: space-between;
 }
 
 .page_main__banners__banner {
   padding: 23px 20px;
   border-radius: 12px;
-  background-image: url("/img/background_banner--chocolate.png");
+  background-image: url("../img/background_banner--chocolate.png");
   background-position: 50% 50%;
   color: white;
+  max-width: 520px;
 }
 
 .page_main__banners__banner:first-of-type {
+  background-image: url("../img/background_banner--raspberry.png");
   margin-right: 20px;
-  background-image: url("/img/background_banner--raspberry.png");
 }
 
 .page_main__banners__banner strong {
@@ -657,7 +660,8 @@ body {
 }
 
 .page_main__banners__banner p {
-  margin: 25px 0 44px 0;
+  margin-top: 23px;
+  margin-bottom: 46px;
 }
 
 .page_main__banners__banner__button_wrapper {
@@ -681,9 +685,10 @@ body {
   display: block;
   position: relative;
   padding: 6px 18px 20px 18px;
-  max-width: 260px;
   border-radius: 4px;
   text-align: center;
+  width: 267px;
+  flex-grow: 1;
 }
 
 .goods_item--hit::before {
@@ -692,7 +697,7 @@ body {
   position: absolute;
   width: 61px;
   height: 61px;
-  background-image: url("/img/hit.png");
+  background-image: url("../img/hit.png");
   z-index: 10;
 }
 
@@ -722,19 +727,19 @@ body {
 }
 
 .goods_item:nth-child(1) .goods_item__container {
-  background-image: url("/img/goods/1.png");
+  background-image: url("../img/goods/1.png");
 }
 
 .goods_item:nth-child(2) .goods_item__container {
-  background-image: url("/img/goods/2.png");
+  background-image: url("../img/goods/2.png");
 }
 
 .goods_item:nth-child(3) .goods_item__container {
-  background-image: url("/img/goods/3.png");
+  background-image: url("../img/goods/3.png");
 }
 
 .goods_item:nth-child(4) .goods_item__container {
-  background-image: url("/img/goods/4.png");
+  background-image: url("../img/goods/4.png");
 }
 
 .goods_item__item_price {
@@ -758,7 +763,7 @@ body {
 */
 
 .page-main__benefits {
-  background-image: url("/img/background-waffles.jpg");
+  background-image: url("../img/background-waffles.jpg");
   background-origin: border-box;
   border-radius: 14px;
   padding: 27px 21px 0 34px;
@@ -808,22 +813,22 @@ THERMOMETR -10px -10px;
 */
 
 .page-main__benefits__benefits_list__benefits_list_item:nth-child(1)::before {
-  background-image: url("/img/benefits_icons.png");
+  background-image: url("../img/benefits_icons.png");
   background-position: -79px -79px;
 }
 
 .page-main__benefits__benefits_list__benefits_list_item:nth-child(2)::before {
-  background-image: url("/img/benefits_icons.png");
+  background-image: url("../img/benefits_icons.png");
   background-position: -10px -79px;
 }
 
 .page-main__benefits__benefits_list__benefits_list_item:nth-child(3)::before {
-  background-image: url("/img/benefits_icons.png");
+  background-image: url("../img/benefits_icons.png");
   background-position: -79px -10px;
 }
 
 .page-main__benefits__benefits_list__benefits_list_item:nth-child(4)::before {
-  background-image: url("/img/benefits_icons.png");
+  background-image: url("../img/benefits_icons.png");
   background-position: -10px -10px;
 }
 
@@ -844,7 +849,7 @@ THERMOMETR -10px -10px;
 .blog-distribution__container > * {
   box-sizing: border-box;
   border-radius: 11px;
-  max-width: 560px;
+  width: 560px;
   flex-grow: 1;
 }
 
@@ -858,9 +863,10 @@ THERMOMETR -10px -10px;
 .page-main__blog {
   padding: 24px 20px;
   background-color: rgb(255, 255, 255);
-  background-image: url("/img/background__blog--strawberry.jpg");
+  background-image: url("../img/background__blog--strawberry.jpg");
   background-repeat: no-repeat;
   background-position: 120% 20%;
+  margin-right: 20px;
 }
 
 .page-main__blog__heading {
@@ -1065,14 +1071,14 @@ THERMOMETR -10px -10px;
 }
 
 .page-main__feedback_form__form__form-close-button::after {
-  content: '╳';
+  content: "╳";
   display: block;
   padding: 2px;
   width: 19px;
   height: 19px;
   font-size: 18px;
   line-height: 18px;
-  text-shadow: 0px 0px 1px  black;
+  text-shadow: 0px 0px 1px black;
 }
 
 .page-main__feedback_form__form__form-textarea {
@@ -1133,21 +1139,28 @@ THERMOMETR -10px -10px;
   filter: brightness(1.1);
 }
 
-.page-footer__page-footer_social__social_list > a:nth-child(1) .page-footer__page-footer_social__social_item{
-  background-image: url(/img/twitter.svg);
-  
+.page-footer__page-footer_social__social_list
+  > a:nth-child(1)
+  .page-footer__page-footer_social__social_item {
+  background-image: url(../img/twitter.svg);
 }
 
-.page-footer__page-footer_social__social_list > a:nth-child(2) .page-footer__page-footer_social__social_item{
-  background-image: url(/img/instagram.svg);
+.page-footer__page-footer_social__social_list
+  > a:nth-child(2)
+  .page-footer__page-footer_social__social_item {
+  background-image: url("../img/instagram.svg");
 }
 
-.page-footer__page-footer_social__social_list > a:nth-child(3) .page-footer__page-footer_social__social_item{
-  background-image: url(/img/facebook.svg);
+.page-footer__page-footer_social__social_list
+  > a:nth-child(3)
+  .page-footer__page-footer_social__social_item {
+  background-image: url("../img/facebook.svg");
 }
 
-.page-footer__page-footer_social__social_list > a:nth-child(4) .page-footer__page-footer_social__social_item{
-  background-image: url(/img/vk.svg);
+.page-footer__page-footer_social__social_list
+  > a:nth-child(4)
+  .page-footer__page-footer_social__social_item {
+  background-image: url("../img/vk.svg");
 }
 
 /*
@@ -1186,14 +1199,14 @@ THERMOMETR -10px -10px;
 }
 
 .page-footer__page-footer_links__list__list-item:first-child::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 15px;
   height: 13px;
   top: 2.5px;
   left: -22px;
-  background-image: url(/img/heart.svg);
+  background-image: url("..img/heart.svg");
   background-position: 50% 50%;
 }
 
@@ -1212,24 +1225,23 @@ THERMOMETR -10px -10px;
   color: rgb(255, 255, 255);
 }
 
-.page-footer__page-footer_thanks p{
+.page-footer__page-footer_thanks p {
   margin: 0;
   margin-top: 26px;
   vertical-align: bottom;
 }
 
 .page-footer__page-footer_thanks::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: -18px;
   left: 0;
   width: 108px;
   height: 39px;
-  background-image: url(/img/logo-htmlacademy-small.png);
+  background-image: url('../img/logo-htmlacademy-small.png');
   background-size: 100%;
 }
-
 
 .page-footer__page-footer_thanks a:visited {
   color: rgb(255, 255, 255);
