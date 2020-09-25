@@ -1,5 +1,5 @@
 /*
-***COMMON STYLES (START)
+***COMMON (START)
 */
 
 /*
@@ -8,6 +8,7 @@ Possible body background colours:
     BLUE: rgb(137, 150, 166);
     BROWN rgb(157, 139, 132);
 */
+
 body {
   background: rgb(132, 157, 143);
   background-image: url("/img/background_image--green.png");
@@ -25,11 +26,11 @@ body {
   width: 1px;
 }
 /*
-***BUTTONS STYLES (START)
+***BUTTONS (START)
 */
 
 .page-container {
-  max-width: 1200px;
+  max-width: 1146px;
   margin: 0 auto;
 }
 
@@ -82,9 +83,9 @@ body {
 }
 
 /*
-***BUTTONS STYLES (END)
-****************************
-***TEXT INPUT STYLES (START)
+***BUTTONS (END)
+*********************
+***TEXT INPUT (START)
 */
 
 .text-input--primary {
@@ -112,7 +113,7 @@ body {
 /*
 ***TEXT INPUT STYLE (END)
 **************************
-***COMMON STYLES (END)
+***COMMON (END)
 **************************
 **************************
 *** HEADER SECTION (START)
@@ -133,7 +134,7 @@ body {
 }
 
 /* 
-***Page header PAGE NAVIGATION styles (START)
+***Page header PAGE NAVIGATION (START)
 */
 
 .header__page-nav {
@@ -158,7 +159,7 @@ body {
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 /*
-***Page navigation NAVIGATION BUTTONS styles (START)
+***Page navigation NAVIGATION BUTTONS (START)
 */
 
 .header__page-nav__button {
@@ -200,9 +201,9 @@ body {
 }
 
 /*
-***Page navigation NAVIGATION BUTTONS styles (END)
-**************************************************
-***Page navigation CATALOG DROPDOWN styles (START)
+***Page navigation NAVIGATION BUTTONS (END)
+*******************************************
+***Page navigation CATALOG DROPDOWN (START)
 */
 
 .header__page-nav__catalog-dropdown {
@@ -273,10 +274,10 @@ body {
 }
 
 /*
-***Page navigation CATALOG DROPDOWN styles (END)
-************************************************
-***Page header PAGE NAVIGATION styles (END)
-************************************************
+***Page navigation CATALOG DROPDOWN (END)
+********************************************
+***Page header PAGE NAVIGATION (END)
+********************************************
 ***Page header USER NAVIGATION style (START)
 */
 
@@ -289,7 +290,7 @@ body {
 }
 
 /*
-***Page header USER NAVIGATION BUTTONS styles (START)
+***Page header USER NAVIGATION BUTTONS (START)
 */
 .header__user-nav__button::before {
   content: "";
@@ -368,11 +369,11 @@ body {
   width: 100%;
 }
 /*
-***Page header USER NAVIGATION BUTTONS styles (END)
-***********************************************************
-***Page header USER NAVIGATION POPUPS styles (START)
-***********************************************************
-***Page header USER NAVIGATION POPUPS SEARCH styles (START)
+***Page header USER NAVIGATION BUTTONS (END)
+****************************************************
+***Page header USER NAVIGATION POPUPS (START)
+****************************************************
+***Page header USER NAVIGATION POPUPS SEARCH (START)
 */
 
 .header__user-nav__search:focus .header__user-nav__search__container,
@@ -397,9 +398,9 @@ body {
 }
 
 /*
-***Page header USER NAVIGATION POPUPS SEARCH styles (END)
-**********************************************************
-***Page header USER NAVIGATION POPUPS LOGIN styles (START)
+***Page header USER NAVIGATION POPUPS SEARCH (END)
+***************************************************
+***Page header USER NAVIGATION POPUPS LOGIN (START)
 */
 
 .header__user-nav__login:hover .header__user-nav__login__container {
@@ -452,9 +453,9 @@ body {
 }
 
 /*
-***Page header USER NAVIGATION POPUPS LOGIN styles (END)
-**********************************************************
-***Page header USER NAVIGATION POPUPS CHART styles (START)
+***Page header USER NAVIGATION POPUPS LOGIN (END)
+***************************************************
+***Page header USER NAVIGATION POPUPS CHART (START)
 */
 
 .header__user-nav__chart:hover .header__user-nav__chart__container {
@@ -522,13 +523,13 @@ body {
 }
 
 /*
-***Page header USER NAVIGATION POPUPS styles (END)
-*********************************************************
+***Page header USER NAVIGATION POPUPS (END)
+********************************************
 ***Page header USER NAVIGATION style (END)
-*********************************************************
-***Page navigation styles (END)
-*********************************************************
-***Page header WORKING HOURS section styles (START)
+********************************************
+***Page navigation (END)
+********************************************
+***Page header WORKING HOURS section (START)
 */
 
 .header__working-hours {
@@ -546,14 +547,14 @@ body {
 }
 
 /*
-***Page header WORKING HOURS section styles (END)
-*************************************************
+***Page header WORKING HOURS section (END)
+******************************************
 ***PAGE HEADER SECTION (END)
-*************************************************
-*************************************************
+******************************************
+******************************************
 ***MAIN SECTION (START)
-*************************************************
-***Page-Main SLIDER styles (START)
+******************************************
+***Page-Main SLIDER (START)
 */
 
 .page_main__slider {
@@ -623,10 +624,10 @@ body {
 }
 
 /*
-Page-Main SLIDER styles (END)
-*******************************
-Page-Main BANNERS styles (START)
-********************************
+***Page-Main SLIDER (END)
+****************************
+***Page-Main BANNERS (START)
+****************************
 */
 
 .page_main__banners {
@@ -663,9 +664,9 @@ Page-Main BANNERS styles (START)
   text-align: right;
 }
 /*
-Page-Main BANNERS styles (END)
+***Page-Main BANNERS (END)
 ******************************
-Page-Main HITS-LIST styles (START)
+***Page-Main HITS-LIST (START)
 */
 
 .page_main__hits__hits_list {
@@ -751,9 +752,9 @@ Page-Main HITS-LIST styles (START)
 }
 
 /*
-Page-Main HITS-LIST styles (END)
-********************************
-Page-Main BENEFITS styles (START)
+***Page-Main HITS-LIST (END)
+*****************************
+***Page-Main BENEFITS (START)
 */
 
 .page-main__benefits {
@@ -800,7 +801,6 @@ Page-Main BENEFITS styles (START)
 
 /*
 SPRITESHEET COORDS:
-
 ICECREAM -79px -79px;
 LEAF -10px -79px;
 COW -79px -10px;
@@ -828,9 +828,9 @@ THERMOMETR -10px -10px;
 }
 
 /*
-Page-Main BENEFITS styles (END)
-********************************************************
-Page-Main BLOG and DISTRIBUTION CONTAINER styles (START)
+***Page-Main BENEFITS (END)
+****************************************************
+***Page-Main BLOG and DISTRIBUTION CONTAINER (START)
 */
 
 .blog-distribution__container {
@@ -849,10 +849,10 @@ Page-Main BLOG and DISTRIBUTION CONTAINER styles (START)
 }
 
 /*
-Page-Main BLOG and DISTRIBUTION CONTAINER styles (END)
-******************************************************
-Page-Main BLOG styles (START)
-******************************************************
+***Page-Main BLOG and DISTRIBUTION CONTAINER (END)
+**************************************************
+***Page-Main BLOG (START)
+**************************************************
 */
 
 .page-main__blog {
@@ -881,10 +881,11 @@ Page-Main BLOG styles (START)
 .page-main__blog__text a:visited {
   color: inherit;
 }
+
 /*
-Page-Main BLOG styles (END)
-*************************************
-Page-Main DISTRIBUTION styles (START)
+***Page-Main BLOG (END)
+*********************************
+***Page-Main DISTRIBUTION (START)
 */
 
 .page-main__distribution {
@@ -945,16 +946,17 @@ Page-Main DISTRIBUTION styles (START)
 }
 
 /*
-Page-Main DISTRIBUTION styles (END)
-***********************************
-Page-Main MAP styles (START)
+***Page-Main DISTRIBUTION (END)
+**************************************
+***Page-Main ADDRESS (START)
+**************************************
+***Page-Main MAP (START)
 */
 
 .page-main__map {
-  margin-top: 90px;
+  margin-top: 40px;
   position: relative;
   height: 430px;
-  padding-top: 62px;
 }
 
 .page-main__map p {
@@ -971,9 +973,9 @@ Page-Main MAP styles (START)
 }
 
 /*
-Page-Main MAP styles (END)
-**************************
-Page-Main FEEDBACK (START)
+***Page-Main MAP (END)
+*****************************
+***Page-Main FEEDBACK (START)
 */
 
 .page-main__map__feedback-container {
@@ -982,6 +984,7 @@ Page-Main FEEDBACK (START)
 
 .page-main__map__feedback {
   margin-left: auto;
+  margin-top: 62px;
   padding: 30px 25px;
   max-width: 252px;
   font-size: 14px;
@@ -1052,6 +1055,7 @@ Page-Main FEEDBACK (START)
   padding: 0;
   border: 0;
   background: transparent;
+  cursor: pointer;
 }
 
 .page-main__feedback_form__form__form-close-button:active,
@@ -1075,4 +1079,158 @@ Page-Main FEEDBACK (START)
   height: 155px;
   resize: none;
   margin-bottom: 25px;
+}
+
+/*
+***Page Main FEEDBACK (END)
+*********************************
+***Page Main ADDRESS (END)
+**********************************
+***PAGE MAIN SECTION (END)
+**********************************
+**********************************
+***FOOTER SECTION (START)
+**********************************
+***Footer SOCIAL (START)
+*/
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__page-footer_social {
+  list-style: none;
+}
+
+.page-footer__page-footer_social__social_list {
+  display: flex;
+  align-items: center;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.page-footer__page-footer_social__social_item {
+  display: block;
+  width: 31px;
+  height: 31px;
+  margin-right: 11px;
+  border: 4px solid rgb(248, 247, 244, 0.7);
+  border-radius: 50%;
+  font-size: 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  transition: all;
+  transition-duration: 0.4s;
+}
+
+.page-footer__page-footer_social__social_item:hover {
+  opacity: 1;
+}
+
+.page-footer__page-footer_social__social_item:active {
+  filter: brightness(1.1);
+}
+
+.page-footer__page-footer_social__social_list > a:nth-child(1) .page-footer__page-footer_social__social_item{
+  background-image: url(/img/twitter.svg);
+  
+}
+
+.page-footer__page-footer_social__social_list > a:nth-child(2) .page-footer__page-footer_social__social_item{
+  background-image: url(/img/instagram.svg);
+}
+
+.page-footer__page-footer_social__social_list > a:nth-child(3) .page-footer__page-footer_social__social_item{
+  background-image: url(/img/facebook.svg);
+}
+
+.page-footer__page-footer_social__social_list > a:nth-child(4) .page-footer__page-footer_social__social_item{
+  background-image: url(/img/vk.svg);
+}
+
+/*
+***Footer SOCIAL(END)
+**********************
+***Footer LINKS  
+*/
+
+.page-footer__page-footer_links__list {
+  display: block;
+  padding: 0;
+  columns: 2;
+  column-gap: 32px;
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+  color: white;
+  white-space: nowrap;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.page-footer__page-footer_links__list__list-item {
+  display: block;
+  max-width: 111px;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.page-footer__page-footer_links__list__list-item:visited {
+  color: white;
+}
+
+.page-footer__page-footer_links__list__list-item:first-child {
+  font-weight: bold;
+  position: relative;
+}
+
+.page-footer__page-footer_links__list__list-item:first-child::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  top: 2.5px;
+  left: -22px;
+  background-image: url(/img/heart.svg);
+  background-position: 50% 50%;
+}
+
+/*
+***Footer LINKS (END)
+**********************
+***Footer THANKS (START)
+*/
+
+.page-footer__page-footer_thanks {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  position: relative;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(255, 255, 255);
+}
+
+.page-footer__page-footer_thanks p{
+  margin: 0;
+  margin-top: 26px;
+  vertical-align: bottom;
+}
+
+.page-footer__page-footer_thanks::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -18px;
+  left: 0;
+  width: 108px;
+  height: 39px;
+  background-image: url(/img/logo-htmlacademy-small.png);
+  background-size: 100%;
+}
+
+
+.page-footer__page-footer_thanks a:visited {
+  color: rgb(255, 255, 255);
 }

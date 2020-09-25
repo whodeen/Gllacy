@@ -8,7 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="stylesheet" href="styles/fonts.css" />
-  <title>Gllacy</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Gllacy - Main Page</title>
 </head>
 
 <body>
@@ -145,7 +146,7 @@
 
   <main class="page_main">
     <div class="page-container">
-      <section class="page_main__slider">
+      <section class="page_main__slider ">
         <h2 class="visually-hidden">Лучшие предложения</h2>
         <section class="page_main__slider--first">
           <h3 class="page_main__slider__heading">
@@ -306,66 +307,72 @@
         </section>
       </div>
     </div>
-    <section class="page-main__map">
-      <h2 class="visually-hidden">Карта</h2>
-      <div id="map" class="page-main__map__map-container"></div>
-      <div class="page-container page-main__map__feedback-container">
-        <section class="page-main__map__feedback">
-          <h3 class="visually-hidden">Адрес</h3>
-          <p>
-            Адрес главного офиса<br> и офлайн-магазина:
-            <span class="page-main__map__feedback__strong_text">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-          </p>
-          <p>
-            Для заказов по телефону: <span class="page-main__map__feedback__strong_text">8 812 450-25-25</span> (с 10 до
-            20
-            ежедневно)
-          </p>
-          <button id="feedback_form__open" class="button--primary button--regular page-main__map__feedback__button">
-            Форма обратной связи
+    <section>
+      <section class="page-main__map">
+        <h2 class="visually-hidden">Карта</h2>
+        <div id="map" class="page-main__map__map-container"></div>
+        <div class="page-container page-main__map__feedback-container">
+          <section class="page-main__map__feedback">
+            <h3 class="visually-hidden">Адрес</h3>
+            <p>
+              Адрес главного офиса<br> и офлайн-магазина:
+              <span class="page-main__map__feedback__strong_text">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+            </p>
+            <p>
+              Для заказов по телефону: <span class="page-main__map__feedback__strong_text">8 812 450-25-25</span> (с 10
+              до
+              20
+              ежедневно)
+            </p>
+            <button id="feedback_form__open" class="button--primary button--regular page-main__map__feedback__button">
+              Форма обратной связи
+            </button>
+        </div>
+      </section>
+      <section id="feedback_form" class="page-main__feedback_form visually-hidden">
+        <form class="page-main__feedback_form__form">
+          <span class="page-main__feedback_form__form__text">Мы обязательно вам ответим!</span>
+          <label class="visually-hidden" for="feedback_name">Имя</label>
+          <input class="page-main__feedback_form__form__form-input text-input--primary" id="feedback_name" type="text"
+            placeholder="Как вас зовут?" />
+          <label class="visually-hidden" for="feedback_email">Електронная почта</label>
+          <input class="page-main__feedback_form__form__form-input text-input--primary" id="feedback_email" type="email"
+            placeholder="Ваша почта для ответа" />
+          <label class="visually-hidden" id="feedback_text">Поле сообщения</label>
+          <textarea class="page-main__feedback_form__form__form-textarea text-input--primary" id="feedback_text"
+            placeholder="Напишите что-нибуть..."></textarea>
+          <button class="page-main__feedback_form__form__form-button button--primary button--regular" type="submit">
+            Отправить
           </button>
-      </div>
-    </section>
-    <section id="feedback_form" class="page-main__feedback_form visually-hidden">
-      <form class="page-main__feedback_form__form">
-        <span class="page-main__feedback_form__form__text">Мы обязательно вам ответим!</span>
-        <label class="visually-hidden" for="feedback_name">Имя</label>
-        <input class="page-main__feedback_form__form__form-input text-input--primary" id="feedback_name" type="text" placeholder="Как вас зовут?" />
-        <label class="visually-hidden" for="feedback_email">Електронная почта</label>
-        <input class="page-main__feedback_form__form__form-input text-input--primary" id="feedback_email" type="email" placeholder="Ваша почта для ответа" />
-        <label class="visually-hidden" id="feedback_text">Поле сообщения</label>
-        <textarea  class="page-main__feedback_form__form__form-textarea text-input--primary" id="feedback_text" placeholder="Напишите что-нибуть..."></textarea>
-        <button class="page-main__feedback_form__form__form-button button--primary button--regular" type="submit">
-          Отправить
-        </button>
-        <button id="feedback_form__close" class="page-main__feedback_form__form__form-close-button" type="button" name="">Закрыть</button>
-      </form>
-    </section>
+          <button id="feedback_form__close" class="page-main__feedback_form__form__form-close-button" type="button"
+            name="">Закрыть</button>
+        </form>
+      </section>
     </section>
   </main>
-  <footer>
+  <footer class="page-footer page-container">
     <section class="page-footer__page-footer_social">
-      <h2>Мы в социльных сетях</h2>
-      <ul>
-        <li><a href="https://twitter.com/">Twitter</a></li>
-        <li><a href="https://instagram.com/">Instagram</a></li>
-        <li><a href="https://facebook.com/">Facebook</a></li>
-        <li><a href="https://vk.com/"></a>VKontakte</li>
+      <h2 class="visually-hidden">Мы в социльных сетях</h2>
+      <ul class="page-footer__page-footer_social__social_list">
+        <a title="Twitter" href="https://twitter.com/"><li class="page-footer__page-footer_social__social_item">Twitter</li></a>
+        <a title="Instagram" href="https://instagram.com/"><li class="page-footer__page-footer_social__social_item">Instagram</li></a>
+        <a title="Facebook" href="https://facebook.com/"><li class="page-footer__page-footer_social__social_item">Facebook</li></a>
+        <a title="VKontakte" href="https://vk.com/"><li class="page-footer__page-footer_social__social_item">VKontakte</li></a>
       </ul>
     </section>
-    <section>
-      <h2>Дополнительная информация</h2>
-      <ul>
-        <li><a href="">Для поставщиков</a></li>
-        <li><a href="">Наши документы</a></li>
-        <li><a href="">О производстве</a></li>
-        <li><a href="">Экологические стандарты</a></li>
+    <section class="page-footer__page-footer_links">
+      <h2 class="visually-hidden">Дополнительная информация</h2>
+      <ul class="page-footer__page-footer_links__list">
+        <a class="page-footer__page-footer_links__list__list-item" href=""><li>Для поставщиков</li></a>
+        <a class="page-footer__page-footer_links__list__list-item" href=""><li>Наши документы</li></a>
+        <a class="page-footer__page-footer_links__list__list-item" href=""><li>О производстве</li></a>
+        <a class="page-footer__page-footer_links__list__list-item" href=""><li>Экологические стандарты</li></a>
       </ul>
     </section>
-    <section>
-      <h2>Благодарности</h2>
+    <section class="page-footer__page-footer_thanks">
+      <h2 class="visually-hidden">Благодарности</h2>
       <p>
-        Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2020
+        Сделано в <a title="HTML Academy" href="https://htmlacademy.ru">HTML Academy</a> © 2020
       </p>
     </section>
   </footer>
